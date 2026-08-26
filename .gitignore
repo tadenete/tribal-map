@@ -1,0 +1,4 @@
+node_modules
+
+# Local overrides (e.g. VITE_CGRAPI -> local Lambda shim)
+.env.local
