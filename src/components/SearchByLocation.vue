@@ -66,6 +66,14 @@
         verificationCompleted: false,
       }
     },
+    watch: {
+      latitudeInput() {
+        this.validateLatitude();
+      },
+      longitudeInput() {
+        this.validateLongitude();
+      },
+    },
     methods: {
       validateLatitude(e) {
         if (this.latitudeInput != '' && !this.numberOnlyRegEx.test(this.latitudeInput)) {
