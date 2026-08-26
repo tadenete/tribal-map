@@ -98,6 +98,23 @@
         displayErrorMessage: '',
       }
     },
+    watch: {
+      streetAddressInput() {
+        this.validateStreetAddress();
+      },
+      cityInput() {
+        this.validateCity();
+      },
+      stateSelect() {
+        this.onSelectedState();
+      },
+      zipCodeInput() {
+        this.validateZipCode();
+      },
+      urbanizationCodeInput() {
+        this.validateUrbanizationCode();
+      },
+    },
     methods: {
       checkStateValueIfPresent() {
         if (this.stateSelect === null) {
